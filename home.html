@@ -32,7 +32,7 @@ width: 93%;
 	height:100%;
 }
 
-#btnAnimals,#logout,#leaderBoard,#	help{
+#btnPlay,#logout,#leaderBoard,#	help{
 width: 90%;
     padding: 10px;
 	border: 5px solid #08387c;
@@ -91,7 +91,7 @@ width: 90%;
 		
 		<div data-role="content" data-theme="a">
 		<br /><br /><br /><br /><br /><br /><br /><br />
-		<a data-role="button" data-mini="true" id="btnAnimals" href="#questionAnimals" style="font-size:30px; font-family: 'Broadway'; border: 5px solid #317ab3; background-color:#329aeb;">PLAY</a><br />
+		<a data-role="button" data-mini="true" id="btnPlay" href="#questionScience" style="font-size:30px; font-family: 'Broadway'; border: 5px solid #317ab3; background-color:#329aeb;">PLAY</a><br />
 		<a data-role="button" data-mini="true" id="leaderBoard" href="#leader" style="font-size:30px; border: 5px solid #317ab3; background-color:#329aeb; font-family: 'Broadway'" onclick="loadAjax()">HIGH SCORE</a><br />
 		<a href="#" id="logout"  data-role="button" data-mini="true" style="font-size:30px; border: 5px solid #317ab3; background-color:#329aeb;	 font-family: 'Broadway'">SIGN OUT</a></li>
 	</div>
@@ -119,7 +119,7 @@ width: 90%;
 </div>
 </div>
 
-<div data-role="page" data-theme="a" id="questionAnimals">
+<div data-role="page" data-theme="a" id="questionScience">
 		<img id="gameBg" />
 		
 		<div data-role="header" data-theme="c">
@@ -456,7 +456,7 @@ $("#quit").click(function(){
 location.href="home.html";
 });
 
-$("#btnAnimals").click(function(){
+$("#btnPlay").click(function(){
 splice();
 });
 
