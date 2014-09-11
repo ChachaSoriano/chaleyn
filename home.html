@@ -90,9 +90,9 @@ width: 90%;
 		</div>
 		
 		<div data-role="content" data-theme="a">
-		<br /><br /><br /><br /><br /><br /><br /><br />
-		<a data-role="button" data-mini="true" id="btnPlay" href="#questionScience" style="font-size:30px; font-family: 'Broadway'; border: 5px solid #317ab3; background-color:#329aeb;">PLAY</a><br />
-		<a data-role="button" data-mini="true" id="leaderBoard" href="#leader" style="font-size:30px; border: 5px solid #317ab3; background-color:#329aeb; font-family: 'Broadway'" onclick="loadAjax()">HIGH SCORE</a><br />
+		<br /><br /><br /><br /><br /><br /><br />
+		<a data-role="button" data-mini="true" id="btnPlay" href="#questionScience" style="font-size:30px; font-family: 'Broadway'; border: 5px solid #317ab3; background-color:#329aeb;">PLAY</a>
+		<a data-role="button" data-mini="true" id="leaderBoard" href="#leader" style="font-size:30px; border: 5px solid #317ab3; background-color:#329aeb; font-family: 'Broadway'" onclick="loadAjax()">HIGH SCORE</a>
 		<a href="#" id="logout"  data-role="button" data-mini="true" style="font-size:30px; border: 5px solid #317ab3; background-color:#329aeb;	 font-family: 'Broadway'">SIGN OUT</a></li>
 	</div>
 </div>
@@ -121,7 +121,6 @@ width: 90%;
 
 <div data-role="page" data-theme="a" id="questionScience">
 		<img id="gameBg" />
-		
 		<div data-role="header" data-theme="c">
 		<center><img src="css/banner.png" width='80%' height='20%'></center>
 		</div>
@@ -135,290 +134,289 @@ width: 90%;
 		<h2 id="asd" style="margin-left: auto; margin-right: auto; font-family: 'Maiandra GD';"></h2>
 		
 		<span id="count"></span>
-		
 		<h2 id="prog2"></h2>
 		<h2 id="questions"></h2>
 	</center>
 
-<a data-role="button" id="check1" class="q1" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c1"></span></a>
-<a data-role="button" id="check2" class="q1" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c2"></span></a>
-<a data-role="button" id="check3" class="q1" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c3"></span></a>
-<a data-role="button" id="check4" class="q2" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c4"></span></a>
-<a data-role="button" id="check5" class="q2" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c5"></span></a>
-<a data-role="button" id="check6" class="q2" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c6"></span></a>
-<a data-role="button" id="check7" class="q3" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c7"></span></a>
-<a data-role="button" id="check8" class="q3" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c8"></span></a>
-<a data-role="button" id="check9" class="q3" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c9"></span></a>
-<a data-role="button" id="check10" class="q4" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c10"></span></a>
-<a data-role="button" id="check11" class="q4" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c11"></span></a>
-<a data-role="button" id="check12" class="q4" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c12"></span></a>
-<a data-role="button" id="check13" class="q5" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c13"></span></a>
-<a data-role="button" id="check14" class="q5" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c14"></span></a>
-<a data-role="button" id="check15" class="q5" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c15"></span></a>
-<a data-role="button" id="check16" class="q6" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c16"></span></a>
-<a data-role="button" id="check17" class="q6" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c17"></span></a>
-<a data-role="button" id="check18" class="q6" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c18"></span></a>
-<a data-role="button" id="check19" class="q7" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c19"></span></a>
-<a data-role="button" id="check20" class="q7" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c20"></span></a>
-<a data-role="button" id="check21" class="q7" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c21"></span></a>
-<a data-role="button" id="check22" class="q8" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c22"></span></a>
-<a data-role="button" id="check23" class="q8" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c23"></span></a>
-<a data-role="button" id="check24" class="q8" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c24"></span></a>
-<a data-role="button" id="check25" class="q9" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c25"></span></a>
-<a data-role="button" id="check26" class="q9" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c26"></span></a>
-<a data-role="button" id="check27" class="q9" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c27"></span></a>
-<a data-role="button" id="check28" class="q10" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c28"></span></a>
-<a data-role="button" id="check29" class="q10" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c29"></span></a>
-<a data-role="button" id="check30" class="q10" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c30"></span></a>
-<a data-role="button" id="check31" class="q11" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c31"></span></a>
-<a data-role="button" id="check32" class="q11" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c32"></span></a>
-<a data-role="button" id="check33" class="q11" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c33"></span></a>
-<a data-role="button" id="check34" class="q12" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c34"></span></a>
-<a data-role="button" id="check35" class="q12" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c35"></span></a>
-<a data-role="button" id="check36" class="q13" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c36"></span></a>
-<a data-role="button" id="check37" class="q13" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c37"></span></a>
-<a data-role="button" id="check38" class="q13" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c38"></span></a>
-<a data-role="button" id="check39" class="q14" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c39"></span></a>
-<a data-role="button" id="check40" class="q14" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c40"></span></a>
-<a data-role="button" id="check41" class="q14" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c41"></span></a>
-<a data-role="button" id="check42" class="q15" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c42"></span></a>
-<a data-role="button" id="check43" class="q15" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c43"></span></a>
-<a data-role="button" id="check44" class="q15" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c44"></span></a>
-<a data-role="button" id="check45" class="q16" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c45"></span></a>
-<a data-role="button" id="check46" class="q16" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c46"></span></a>
-<a data-role="button" id="check47" class="q16" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c47"></span></a>
-<a data-role="button" id="check48" class="q17" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c48"></span></a>
-<a data-role="button" id="check49" class="q17" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c49"></span></a>
-<a data-role="button" id="check50" class="q17" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c50"></span></a>
-<a data-role="button" id="check51" class="q18" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c51"></span></a>
-<a data-role="button" id="check52" class="q18" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c52"></span></a>
-<a data-role="button" id="check53" class="q18" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c53"></span></a>
-<a data-role="button" id="check54" class="q19" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c54"></span></a>
-<a data-role="button" id="check55" class="q19" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c55"></span></a>
-<a data-role="button" id="check56" class="q19" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c56"></span></a>
-<a data-role="button" id="check57" class="q20" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c57"></span></a>
-<a data-role="button" id="check58" class="q20" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c58"></span></a>
-<a data-role="button" id="check59" class="q20" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c59"></span></a>
-<a data-role="button" id="check60" class="q21" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c60"></span></a>
-<a data-role="button" id="check61" class="q21" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c61"></span></a>
-<a data-role="button" id="check62" class="q21" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c62"></span></a>
-<a data-role="button" id="check63" class="q22" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c63"></span></a>
-<a data-role="button" id="check64" class="q22" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c64"></span></a>
-<a data-role="button" id="check65" class="q22" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c65"></span></a>
-<a data-role="button" id="check66" class="q23" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c66"></span></a>
-<a data-role="button" id="check67" class="q23" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c67"></span></a>
-<a data-role="button" id="check68" class="q23" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c68"></span></a>
-<a data-role="button" id="check69" class="q24" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c69"></span></a>
-<a data-role="button" id="check70" class="q24" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c70"></span></a>
-<a data-role="button" id="check71" class="q24" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c71"></span></a>
-<a data-role="button" id="check72" class="q25" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c72"></span></a>
-<a data-role="button" id="check73" class="q25" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c73"></span></a>
-<a data-role="button" id="check74" class="q25" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c74"></span></a>
-<a data-role="button" id="check75" class="q26" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c75"></span></a>
-<a data-role="button" id="check76" class="q26" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c76"></span></a>
-<a data-role="button" id="check77" class="q26" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c77"></span></a>
-<a data-role="button" id="check78" class="q27" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c78"></span></a>
-<a data-role="button" id="check79" class="q27" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c79"></span></a>
-<a data-role="button" id="check80" class="q27" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c80"></span></a>
-<a data-role="button" id="check81" class="q28" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c81"></span></a>
-<a data-role="button" id="check82" class="q28" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c82"></span></a>
-<a data-role="button" id="check83" class="q28" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c83"></span></a>
-<a data-role="button" id="check84" class="q29" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c84"></span></a>
-<a data-role="button" id="check85" class="q29" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c85"></span></a>
-<a data-role="button" id="check86" class="q29" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c86"></span></a>
-<a data-role="button" id="check87" class="q30" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c87"></span></a>
-<a data-role="button" id="check88" class="q30" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c88"></span></a>
-<a data-role="button" id="check89" class="q30" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c89"></span></a>
-<a data-role="button" id="check90" class="q31" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c90"></span></a>
-<a data-role="button" id="check91" class="q31" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c91"></span></a>
-<a data-role="button" id="check92" class="q31" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c92"></span></a>
-<a data-role="button" id="check93" class="q32" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c93"></span></a>
-<a data-role="button" id="check94" class="q32" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c94"></span></a>
-<a data-role="button" id="check95" class="q32" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c95"></span></a>
-<a data-role="button" id="check96" class="q33" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c96"></span></a>
-<a data-role="button" id="check97" class="q33" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c97"></span></a>
-<a data-role="button" id="check98" class="q33" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c98"></span></a>
-<a data-role="button" id="check99" class="q34" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c99"></span></a>
-<a data-role="button" id="check100" class="q34" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c100"></span></a>
-<a data-role="button" id="check101" class="q34" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c101"></span></a>
-<a data-role="button" id="check102" class="q35" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c102"></span></a>
-<a data-role="button" id="check103" class="q35" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c103"></span></a>
-<a data-role="button" id="check104" class="q35" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c104"></span></a>
-<a data-role="button" id="check105" class="q36" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c105"></span></a>
-<a data-role="button" id="check106" class="q36" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c106"></span></a>
-<a data-role="button" id="check107" class="q37" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c107"></span></a>
-<a data-role="button" id="check108" class="q37" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c108"></span></a>
-<a data-role="button" id="check109" class="q37" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c109"></span></a>
-<a data-role="button" id="check110" class="q38" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c110"></span></a>
-<a data-role="button" id="check111" class="q38" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c111"></span></a>
-<a data-role="button" id="check112" class="q38" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c112"></span></a>
-<a data-role="button" id="check113" class="q39" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c113"></span></a>
-<a data-role="button" id="check114" class="q39" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c114"></span></a>
-<a data-role="button" id="check115" class="q39" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c115"></span></a>
-<a data-role="button" id="check116" class="q40" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c116"></span></a>
-<a data-role="button" id="check117" class="q40" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c117"></span></a>
-<a data-role="button" id="check118" class="q40" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c118"></span></a>
-<a data-role="button" id="check119" class="q41" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c119"></span></a>
-<a data-role="button" id="check120" class="q41" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c120"></span></a>
-<a data-role="button" id="check121" class="q41" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c121"></span></a>
-<a data-role="button" id="check122" class="q42" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c122"></span></a>
-<a data-role="button" id="check123" class="q42" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c123"></span></a>
-<a data-role="button" id="check124" class="q42" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c124"></span></a>
-<a data-role="button" id="check125" class="q43" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c125"></span></a>
-<a data-role="button" id="check126" class="q43" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c126"></span></a>
-<a data-role="button" id="check127" class="q43" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c127"></span></a>
-<a data-role="button" id="check128" class="q44" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c128"></span></a>
-<a data-role="button" id="check129" class="q44" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c129"></span></a>
-<a data-role="button" id="check130" class="q24" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c130"></span></a>
-<a data-role="button" id="check131" class="q45" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c131"></span></a>
-<a data-role="button" id="check132" class="q45" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c132"></span></a>
-<a data-role="button" id="check133" class="q45" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c133"></span></a>
-<a data-role="button" id="check134" class="q46" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c134"></span></a>
-<a data-role="button" id="check135" class="q46" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c135"></span></a>
-<a data-role="button" id="check136" class="q47" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c136"></span></a>
-<a data-role="button" id="check137" class="q47" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c137"></span></a>
-<a data-role="button" id="check138" class="q27" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c138"></span></a>
-<a data-role="button" id="check139" class="q48" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c139"></span></a>
-<a data-role="button" id="check140" class="q48" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c140"></span></a>
-<a data-role="button" id="check141" class="q48" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c141"></span></a>
-<a data-role="button" id="check142" class="q49" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c142"></span></a>
-<a data-role="button" id="check143" class="q49" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c143"></span></a>
-<a data-role="button" id="check144" class="q49" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c144"></span></a>
-<a data-role="button" id="check145" class="q50" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c145"></span></a>
-<a data-role="button" id="check146" class="q50" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c146"></span></a>
-<a data-role="button" id="check147" class="q50" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c147"></span></a>
-<a data-role="button" id="check148" class="q51" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c148"></span></a>
-<a data-role="button" id="check149" class="q51" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c149"></span></a>
-<a data-role="button" id="check150" class="q51" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c150"></span></a>
-<a data-role="button" id="check151" class="q52" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c151"></span></a>
-<a data-role="button" id="check152" class="q52" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c152"></span></a>
-<a data-role="button" id="check153" class="q52" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c153"></span></a>
-<a data-role="button" id="check154" class="q53" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c154"></span></a>
-<a data-role="button" id="check155" class="q53" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c155"></span></a>
-<a data-role="button" id="check156" class="q53" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c156"></span></a>
-<a data-role="button" id="check157" class="q54" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c157"></span></a>
-<a data-role="button" id="check158" class="q54" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c158"></span></a>
-<a data-role="button" id="check159" class="q24" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c159"></span></a>
-<a data-role="button" id="check160" class="q55" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c160"></span></a>
-<a data-role="button" id="check161" class="q55" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c161"></span></a>
-<a data-role="button" id="check162" class="q55" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c162"></span></a>
-<a data-role="button" id="check163" class="q56" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c163"></span></a>
-<a data-role="button" id="check164" class="q56" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c164"></span></a>
-<a data-role="button" id="check165" class="q56" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c165"></span></a>
-<a data-role="button" id="check166" class="q57" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c166"></span></a>
-<a data-role="button" id="check167" class="q57" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c167"></span></a>
-<a data-role="button" id="check168" class="q57" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c168"></span></a>
-<a data-role="button" id="check169" class="q58" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c169"></span></a>
-<a data-role="button" id="check170" class="q58" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c170"></span></a>
-<a data-role="button" id="check171" class="q58" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c171"></span></a>
-<a data-role="button" id="check172" class="q59" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c172"></span></a>
-<a data-role="button" id="check173" class="q59" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c173"></span></a>
-<a data-role="button" id="check174" class="q60" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c174"></span></a>
-<a data-role="button" id="check175" class="q60" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c175"></span></a>
-<a data-role="button" id="check176" class="q60" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c176"></span></a>
-<a data-role="button" id="check177" class="q61" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c177"></span></a>
-<a data-role="button" id="check178" class="q61" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c178"></span></a>
-<a data-role="button" id="check179" class="q61" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c179"></span></a>
-<a data-role="button" id="check180" class="q62" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c180"></span></a>
-<a data-role="button" id="check181" class="q62" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c181"></span></a>
-<a data-role="button" id="check182" class="q62" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c182"></span></a>
-<a data-role="button" id="check183" class="q63" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c183"></span></a>
-<a data-role="button" id="check184" class="q63" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c184"></span></a>
-<a data-role="button" id="check185" class="q63" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c185"></span></a>
-<a data-role="button" id="check186" class="q64" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c186"></span></a>
-<a data-role="button" id="check187" class="q64" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c187"></span></a>
-<a data-role="button" id="check188" class="q64" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c188"></span></a>
-<a data-role="button" id="check189" class="q65" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c189"></span></a>
-<a data-role="button" id="check190" class="q65" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c190"></span></a>
-<a data-role="button" id="check191" class="q65" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c191"></span></a>
-<a data-role="button" id="check192" class="q66" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c192"></span></a>
-<a data-role="button" id="check193" class="q66" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c193"></span></a>
-<a data-role="button" id="check194" class="q67" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c194"></span></a>
-<a data-role="button" id="check195" class="q67" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c195"></span></a>
-<a data-role="button" id="check196" class="q67" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c196"></span></a>
-<a data-role="button" id="check197" class="q68" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c197"></span></a>
-<a data-role="button" id="check198" class="q68" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c198"></span></a>
-<a data-role="button" id="check199" class="q69" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c199"></span></a>
-<a data-role="button" id="check200" class="q69" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c200"></span></a>
-<a data-role="button" id="check201" class="q69" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c201"></span></a>
-<a data-role="button" id="check202" class="q70" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c202"></span></a>
-<a data-role="button" id="check203" class="q70" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c203"></span></a>
-<a data-role="button" id="check204" class="q70" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c204"></span></a>
-<a data-role="button" id="check205" class="q71" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c205"></span></a>
-<a data-role="button" id="check206" class="q71" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c206"></span></a>
-<a data-role="button" id="check207" class="q71" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c207"></span></a>
-<a data-role="button" id="check208" class="q72" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c208"></span></a>
-<a data-role="button" id="check209" class="q72" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c209"></span></a>
-<a data-role="button" id="check210" class="q72" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c210"></span></a>
-<a data-role="button" id="check211" class="q73" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c211"></span></a>
-<a data-role="button" id="check212" class="q73" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c212"></span></a>
-<a data-role="button" id="check213" class="q74" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c213"></span></a>
-<a data-role="button" id="check214" class="q74" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c214"></span></a>
-<a data-role="button" id="check215" class="q74" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c215"></span></a>
-<a data-role="button" id="check216" class="q75" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c216"></span></a>
-<a data-role="button" id="check217" class="q75" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c217"></span></a>
-<a data-role="button" id="check218" class="q75" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c218"></span></a>
-<a data-role="button" id="check219" class="q76" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c219"></span></a>
-<a data-role="button" id="check220" class="q76" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c220"></span></a>
-<a data-role="button" id="check221" class="q77" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c221"></span></a>
-<a data-role="button" id="check222" class="q77" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c222"></span></a>
-<a data-role="button" id="check223" class="q77" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c223"></span></a>
-<a data-role="button" id="check224" class="q78" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c224"></span></a>
-<a data-role="button" id="check225" class="q78" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c225"></span></a>
-<a data-role="button" id="check226" class="q78" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c226"></span></a>
-<a data-role="button" id="check227" class="q79" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c227"></span></a>
-<a data-role="button" id="check228" class="q79" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c228"></span></a>
-<a data-role="button" id="check229" class="q80" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c229"></span></a>
-<a data-role="button" id="check230" class="q80" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c230"></span></a>
-<a data-role="button" id="check231" class="q80" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c231"></span></a>
-<a data-role="button" id="check232" class="q81" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c232"></span></a>
-<a data-role="button" id="check233" class="q81" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c233"></span></a>
-<a data-role="button" id="check234" class="q82" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c234"></span></a>
-<a data-role="button" id="check235" class="q82" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c235"></span></a>
-<a data-role="button" id="check236" class="q83" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c236"></span></a>
-<a data-role="button" id="check237" class="q83" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c237"></span></a>
-<a data-role="button" id="check238" class="q83" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c238"></span></a>
-<a data-role="button" id="check239" class="q84" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c239"></span></a>
-<a data-role="button" id="check240" class="q84" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c240"></span></a>
-<a data-role="button" id="check241" class="q84" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c241"></span></a>
-<a data-role="button" id="check242" class="q85" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c242"></span></a>
-<a data-role="button" id="check243" class="q85" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c243"></span></a>
-<a data-role="button" id="check244" class="q85" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c244"></span></a>
-<a data-role="button" id="check245" class="q86" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c245"></span></a>
-<a data-role="button" id="check246" class="q86" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c246"></span></a>
-<a data-role="button" id="check247" class="q86" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c247"></span></a>
-<a data-role="button" id="check248" class="q87" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c248"></span></a>
-<a data-role="button" id="check249" class="q87" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c249"></span></a>
-<a data-role="button" id="check250" class="q88" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c250"></span></a>
-<a data-role="button" id="check251" class="q88" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c251"></span></a>
-<a data-role="button" id="check252" class="q88" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c252"></span></a>
-<a data-role="button" id="check253" class="q89" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c253"></span></a>
-<a data-role="button" id="check254" class="q89" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c254"></span></a>
-<a data-role="button" id="check255" class="q89" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c255"></span></a>
-<a data-role="button" id="check256" class="q90" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c256"></span></a>
-<a data-role="button" id="check257" class="q90" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c257"></span></a>
-<a data-role="button" id="check258" class="q91" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c258"></span></a>
-<a data-role="button" id="check259" class="q91" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c259"></span></a>
-<a data-role="button" id="check260" class="q92" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c260"></span></a>
-<a data-role="button" id="check261" class="q92" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c261"></span></a>
-<a data-role="button" id="check262" class="q92" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c262"></span></a>
-<a data-role="button" id="check263" class="q93" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c263"></span></a>
-<a data-role="button" id="check264" class="q93" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c264"></span></a>
-<a data-role="button" id="check265" class="q94" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c265"></span></a>
-<a data-role="button" id="check266" class="q94" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c266"></span></a>
-<a data-role="button" id="check267" class="q95" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c267"></span></a>
-<a data-role="button" id="check268" class="q95" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c268"></span></a>
-<a data-role="button" id="check269" class="q26" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c269"></span></a>
-<a data-role="button" id="check270" class="q96" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c270"></span></a>
-<a data-role="button" id="check271" class="q97" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c271"></span></a>
-<a data-role="button" id="check272" class="q97" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c272"></span></a>
-<a data-role="button" id="check273" class="q97" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c273"></span></a>
-<a data-role="button" id="check274" class="q98" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c274"></span></a>
-<a data-role="button" id="check275" class="q98" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c275"></span></a>
-<a data-role="button" id="check276" class="q99" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c276"></span></a>
-<a data-role="button" id="check277" class="q99" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c277"></span></a>
-<a data-role="button" id="check278" class="q100" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c278"></span></a>
-<a data-role="button" id="check279" class="q100" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb;"><span id="c279"></span></a>
+<a data-role="button" id="check1" class="q1" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c1"></span></a>
+<a data-role="button" id="check2" class="q1" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c2"></span></a>
+<a data-role="button" id="check3" class="q1" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c3"></span></a>
+<a data-role="button" id="check4" class="q2" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c4"></span></a>
+<a data-role="button" id="check5" class="q2" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c5"></span></a>
+<a data-role="button" id="check6" class="q2" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c6"></span></a>
+<a data-role="button" id="check7" class="q3" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c7"></span></a>
+<a data-role="button" id="check8" class="q3" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c8"></span></a>
+<a data-role="button" id="check9" class="q3" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c9"></span></a>
+<a data-role="button" id="check10" class="q4" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c10"></span></a>
+<a data-role="button" id="check11" class="q4" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c11"></span></a>
+<a data-role="button" id="check12" class="q4" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c12"></span></a>
+<a data-role="button" id="check13" class="q5" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c13"></span></a>
+<a data-role="button" id="check14" class="q5" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c14"></span></a>
+<a data-role="button" id="check15" class="q5" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c15"></span></a>
+<a data-role="button" id="check16" class="q6" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c16"></span></a>
+<a data-role="button" id="check17" class="q6" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c17"></span></a>
+<a data-role="button" id="check18" class="q6" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c18"></span></a>
+<a data-role="button" id="check19" class="q7" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c19"></span></a>
+<a data-role="button" id="check20" class="q7" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c20"></span></a>
+<a data-role="button" id="check21" class="q7" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c21"></span></a>
+<a data-role="button" id="check22" class="q8" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c22"></span></a>
+<a data-role="button" id="check23" class="q8" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c23"></span></a>
+<a data-role="button" id="check24" class="q8" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c24"></span></a>
+<a data-role="button" id="check25" class="q9" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c25"></span></a>
+<a data-role="button" id="check26" class="q9" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c26"></span></a>
+<a data-role="button" id="check27" class="q9" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c27"></span></a>
+<a data-role="button" id="check28" class="q10" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c28"></span></a>
+<a data-role="button" id="check29" class="q10" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c29"></span></a>
+<a data-role="button" id="check30" class="q10" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c30"></span></a>
+<a data-role="button" id="check31" class="q11" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c31"></span></a>
+<a data-role="button" id="check32" class="q11" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c32"></span></a>
+<a data-role="button" id="check33" class="q11" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c33"></span></a>
+<a data-role="button" id="check34" class="q12" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c34"></span></a>
+<a data-role="button" id="check35" class="q12" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c35"></span></a>
+<a data-role="button" id="check36" class="q13" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c36"></span></a>
+<a data-role="button" id="check37" class="q13" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c37"></span></a>
+<a data-role="button" id="check38" class="q13" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c38"></span></a>
+<a data-role="button" id="check39" class="q14" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c39"></span></a>
+<a data-role="button" id="check40" class="q14" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c40"></span></a>
+<a data-role="button" id="check41" class="q14" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c41"></span></a>
+<a data-role="button" id="check42" class="q15" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c42"></span></a>
+<a data-role="button" id="check43" class="q15" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c43"></span></a>
+<a data-role="button" id="check44" class="q15" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c44"></span></a>
+<a data-role="button" id="check45" class="q16" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c45"></span></a>
+<a data-role="button" id="check46" class="q16" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c46"></span></a>
+<a data-role="button" id="check47" class="q16" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c47"></span></a>
+<a data-role="button" id="check48" class="q17" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c48"></span></a>
+<a data-role="button" id="check49" class="q17" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c49"></span></a>
+<a data-role="button" id="check50" class="q17" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c50"></span></a>
+<a data-role="button" id="check51" class="q18" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c51"></span></a>
+<a data-role="button" id="check52" class="q18" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c52"></span></a>
+<a data-role="button" id="check53" class="q18" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c53"></span></a>
+<a data-role="button" id="check54" class="q19" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c54"></span></a>
+<a data-role="button" id="check55" class="q19" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c55"></span></a>
+<a data-role="button" id="check56" class="q19" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c56"></span></a>
+<a data-role="button" id="check57" class="q20" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c57"></span></a>
+<a data-role="button" id="check58" class="q20" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c58"></span></a>
+<a data-role="button" id="check59" class="q20" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c59"></span></a>
+<a data-role="button" id="check60" class="q21" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c60"></span></a>
+<a data-role="button" id="check61" class="q21" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c61"></span></a>
+<a data-role="button" id="check62" class="q21" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c62"></span></a>
+<a data-role="button" id="check63" class="q22" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c63"></span></a>
+<a data-role="button" id="check64" class="q22" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c64"></span></a>
+<a data-role="button" id="check65" class="q22" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c65"></span></a>
+<a data-role="button" id="check66" class="q23" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c66"></span></a>
+<a data-role="button" id="check67" class="q23" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c67"></span></a>
+<a data-role="button" id="check68" class="q23" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c68"></span></a>
+<a data-role="button" id="check69" class="q24" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c69"></span></a>
+<a data-role="button" id="check70" class="q24" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c70"></span></a>
+<a data-role="button" id="check71" class="q24" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c71"></span></a>
+<a data-role="button" id="check72" class="q25" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c72"></span></a>
+<a data-role="button" id="check73" class="q25" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c73"></span></a>
+<a data-role="button" id="check74" class="q25" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c74"></span></a>
+<a data-role="button" id="check75" class="q26" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c75"></span></a>
+<a data-role="button" id="check76" class="q26" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c76"></span></a>
+<a data-role="button" id="check77" class="q26" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c77"></span></a>
+<a data-role="button" id="check78" class="q27" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c78"></span></a>
+<a data-role="button" id="check79" class="q27" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c79"></span></a>
+<a data-role="button" id="check80" class="q27" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c80"></span></a>
+<a data-role="button" id="check81" class="q28" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c81"></span></a>
+<a data-role="button" id="check82" class="q28" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c82"></span></a>
+<a data-role="button" id="check83" class="q28" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c83"></span></a>
+<a data-role="button" id="check84" class="q29" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c84"></span></a>
+<a data-role="button" id="check85" class="q29" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c85"></span></a>
+<a data-role="button" id="check86" class="q29" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c86"></span></a>
+<a data-role="button" id="check87" class="q30" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c87"></span></a>
+<a data-role="button" id="check88" class="q30" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c88"></span></a>
+<a data-role="button" id="check89" class="q30" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c89"></span></a>
+<a data-role="button" id="check90" class="q31" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c90"></span></a>
+<a data-role="button" id="check91" class="q31" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c91"></span></a>
+<a data-role="button" id="check92" class="q31" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c92"></span></a>
+<a data-role="button" id="check93" class="q32" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c93"></span></a>
+<a data-role="button" id="check94" class="q32" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c94"></span></a>
+<a data-role="button" id="check95" class="q32" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c95"></span></a>
+<a data-role="button" id="check96" class="q33" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c96"></span></a>
+<a data-role="button" id="check97" class="q33" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c97"></span></a>
+<a data-role="button" id="check98" class="q33" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c98"></span></a>
+<a data-role="button" id="check99" class="q34" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c99"></span></a>
+<a data-role="button" id="check100" class="q34" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c100"></span></a>
+<a data-role="button" id="check101" class="q34" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c101"></span></a>
+<a data-role="button" id="check102" class="q35" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c102"></span></a>
+<a data-role="button" id="check103" class="q35" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c103"></span></a>
+<a data-role="button" id="check104" class="q35" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c104"></span></a>
+<a data-role="button" id="check105" class="q36" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c105"></span></a>
+<a data-role="button" id="check106" class="q36" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c106"></span></a>
+<a data-role="button" id="check107" class="q37" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c107"></span></a>
+<a data-role="button" id="check108" class="q37" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c108"></span></a>
+<a data-role="button" id="check109" class="q37" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c109"></span></a>
+<a data-role="button" id="check110" class="q38" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c110"></span></a>
+<a data-role="button" id="check111" class="q38" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c111"></span></a>
+<a data-role="button" id="check112" class="q38" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c112"></span></a>
+<a data-role="button" id="check113" class="q39" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c113"></span></a>
+<a data-role="button" id="check114" class="q39" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c114"></span></a>
+<a data-role="button" id="check115" class="q39" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c115"></span></a>
+<a data-role="button" id="check116" class="q40" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c116"></span></a>
+<a data-role="button" id="check117" class="q40" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c117"></span></a>
+<a data-role="button" id="check118" class="q40" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c118"></span></a>
+<a data-role="button" id="check119" class="q41" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c119"></span></a>
+<a data-role="button" id="check120" class="q41" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c120"></span></a>
+<a data-role="button" id="check121" class="q41" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c121"></span></a>
+<a data-role="button" id="check122" class="q42" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c122"></span></a>
+<a data-role="button" id="check123" class="q42" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c123"></span></a>
+<a data-role="button" id="check124" class="q42" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c124"></span></a>
+<a data-role="button" id="check125" class="q43" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c125"></span></a>
+<a data-role="button" id="check126" class="q43" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c126"></span></a>
+<a data-role="button" id="check127" class="q43" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c127"></span></a>
+<a data-role="button" id="check128" class="q44" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c128"></span></a>
+<a data-role="button" id="check129" class="q44" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c129"></span></a>
+<a data-role="button" id="check130" class="q24" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c130"></span></a>
+<a data-role="button" id="check131" class="q45" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c131"></span></a>
+<a data-role="button" id="check132" class="q45" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c132"></span></a>
+<a data-role="button" id="check133" class="q45" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c133"></span></a>
+<a data-role="button" id="check134" class="q46" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c134"></span></a>
+<a data-role="button" id="check135" class="q46" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c135"></span></a>
+<a data-role="button" id="check136" class="q47" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c136"></span></a>
+<a data-role="button" id="check137" class="q47" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c137"></span></a>
+<a data-role="button" id="check138" class="q27" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c138"></span></a>
+<a data-role="button" id="check139" class="q48" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c139"></span></a>
+<a data-role="button" id="check140" class="q48" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c140"></span></a>
+<a data-role="button" id="check141" class="q48" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c141"></span></a>
+<a data-role="button" id="check142" class="q49" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c142"></span></a>
+<a data-role="button" id="check143" class="q49" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c143"></span></a>
+<a data-role="button" id="check144" class="q49" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c144"></span></a>
+<a data-role="button" id="check145" class="q50" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c145"></span></a>
+<a data-role="button" id="check146" class="q50" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c146"></span></a>
+<a data-role="button" id="check147" class="q50" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c147"></span></a>
+<a data-role="button" id="check148" class="q51" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c148"></span></a>
+<a data-role="button" id="check149" class="q51" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c149"></span></a>
+<a data-role="button" id="check150" class="q51" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c150"></span></a>
+<a data-role="button" id="check151" class="q52" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c151"></span></a>
+<a data-role="button" id="check152" class="q52" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c152"></span></a>
+<a data-role="button" id="check153" class="q52" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c153"></span></a>
+<a data-role="button" id="check154" class="q53" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c154"></span></a>
+<a data-role="button" id="check155" class="q53" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c155"></span></a>
+<a data-role="button" id="check156" class="q53" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c156"></span></a>
+<a data-role="button" id="check157" class="q54" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c157"></span></a>
+<a data-role="button" id="check158" class="q54" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c158"></span></a>
+<a data-role="button" id="check159" class="q24" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c159"></span></a>
+<a data-role="button" id="check160" class="q55" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c160"></span></a>
+<a data-role="button" id="check161" class="q55" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c161"></span></a>
+<a data-role="button" id="check162" class="q55" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c162"></span></a>
+<a data-role="button" id="check163" class="q56" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c163"></span></a>
+<a data-role="button" id="check164" class="q56" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c164"></span></a>
+<a data-role="button" id="check165" class="q56" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c165"></span></a>
+<a data-role="button" id="check166" class="q57" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c166"></span></a>
+<a data-role="button" id="check167" class="q57" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c167"></span></a>
+<a data-role="button" id="check168" class="q57" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c168"></span></a>
+<a data-role="button" id="check169" class="q58" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c169"></span></a>
+<a data-role="button" id="check170" class="q58" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c170"></span></a>
+<a data-role="button" id="check171" class="q58" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c171"></span></a>
+<a data-role="button" id="check172" class="q59" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c172"></span></a>
+<a data-role="button" id="check173" class="q59" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c173"></span></a>
+<a data-role="button" id="check174" class="q60" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c174"></span></a>
+<a data-role="button" id="check175" class="q60" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c175"></span></a>
+<a data-role="button" id="check176" class="q60" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c176"></span></a>
+<a data-role="button" id="check177" class="q61" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c177"></span></a>
+<a data-role="button" id="check178" class="q61" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c178"></span></a>
+<a data-role="button" id="check179" class="q61" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c179"></span></a>
+<a data-role="button" id="check180" class="q62" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c180"></span></a>
+<a data-role="button" id="check181" class="q62" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c181"></span></a>
+<a data-role="button" id="check182" class="q62" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c182"></span></a>
+<a data-role="button" id="check183" class="q63" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c183"></span></a>
+<a data-role="button" id="check184" class="q63" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c184"></span></a>
+<a data-role="button" id="check185" class="q63" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c185"></span></a>
+<a data-role="button" id="check186" class="q64" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c186"></span></a>
+<a data-role="button" id="check187" class="q64" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c187"></span></a>
+<a data-role="button" id="check188" class="q64" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c188"></span></a>
+<a data-role="button" id="check189" class="q65" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c189"></span></a>
+<a data-role="button" id="check190" class="q65" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c190"></span></a>
+<a data-role="button" id="check191" class="q65" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c191"></span></a>
+<a data-role="button" id="check192" class="q66" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c192"></span></a>
+<a data-role="button" id="check193" class="q66" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c193"></span></a>
+<a data-role="button" id="check194" class="q67" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c194"></span></a>
+<a data-role="button" id="check195" class="q67" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c195"></span></a>
+<a data-role="button" id="check196" class="q67" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c196"></span></a>
+<a data-role="button" id="check197" class="q68" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c197"></span></a>
+<a data-role="button" id="check198" class="q68" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c198"></span></a>
+<a data-role="button" id="check199" class="q69" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c199"></span></a>
+<a data-role="button" id="check200" class="q69" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c200"></span></a>
+<a data-role="button" id="check201" class="q69" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c201"></span></a>
+<a data-role="button" id="check202" class="q70" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c202"></span></a>
+<a data-role="button" id="check203" class="q70" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c203"></span></a>
+<a data-role="button" id="check204" class="q70" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c204"></span></a>
+<a data-role="button" id="check205" class="q71" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c205"></span></a>
+<a data-role="button" id="check206" class="q71" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c206"></span></a>
+<a data-role="button" id="check207" class="q71" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c207"></span></a>
+<a data-role="button" id="check208" class="q72" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c208"></span></a>
+<a data-role="button" id="check209" class="q72" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c209"></span></a>
+<a data-role="button" id="check210" class="q72" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c210"></span></a>
+<a data-role="button" id="check211" class="q73" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c211"></span></a>
+<a data-role="button" id="check212" class="q73" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c212"></span></a>
+<a data-role="button" id="check213" class="q74" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c213"></span></a>
+<a data-role="button" id="check214" class="q74" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c214"></span></a>
+<a data-role="button" id="check215" class="q74" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c215"></span></a>
+<a data-role="button" id="check216" class="q75" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c216"></span></a>
+<a data-role="button" id="check217" class="q75" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c217"></span></a>
+<a data-role="button" id="check218" class="q75" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c218"></span></a>
+<a data-role="button" id="check219" class="q76" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c219"></span></a>
+<a data-role="button" id="check220" class="q76" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c220"></span></a>
+<a data-role="button" id="check221" class="q77" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c221"></span></a>
+<a data-role="button" id="check222" class="q77" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c222"></span></a>
+<a data-role="button" id="check223" class="q77" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c223"></span></a>
+<a data-role="button" id="check224" class="q78" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c224"></span></a>
+<a data-role="button" id="check225" class="q78" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c225"></span></a>
+<a data-role="button" id="check226" class="q78" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c226"></span></a>
+<a data-role="button" id="check227" class="q79" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c227"></span></a>
+<a data-role="button" id="check228" class="q79" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c228"></span></a>
+<a data-role="button" id="check229" class="q80" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c229"></span></a>
+<a data-role="button" id="check230" class="q80" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c230"></span></a>
+<a data-role="button" id="check231" class="q80" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c231"></span></a>
+<a data-role="button" id="check232" class="q81" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c232"></span></a>
+<a data-role="button" id="check233" class="q81" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c233"></span></a>
+<a data-role="button" id="check234" class="q82" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c234"></span></a>
+<a data-role="button" id="check235" class="q82" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c235"></span></a>
+<a data-role="button" id="check236" class="q83" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c236"></span></a>
+<a data-role="button" id="check237" class="q83" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c237"></span></a>
+<a data-role="button" id="check238" class="q83" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c238"></span></a>
+<a data-role="button" id="check239" class="q84" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c239"></span></a>
+<a data-role="button" id="check240" class="q84" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c240"></span></a>
+<a data-role="button" id="check241" class="q84" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c241"></span></a>
+<a data-role="button" id="check242" class="q85" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c242"></span></a>
+<a data-role="button" id="check243" class="q85" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c243"></span></a>
+<a data-role="button" id="check244" class="q85" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c244"></span></a>
+<a data-role="button" id="check245" class="q86" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c245"></span></a>
+<a data-role="button" id="check246" class="q86" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c246"></span></a>
+<a data-role="button" id="check247" class="q86" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c247"></span></a>
+<a data-role="button" id="check248" class="q87" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c248"></span></a>
+<a data-role="button" id="check249" class="q87" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c249"></span></a>
+<a data-role="button" id="check250" class="q88" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c250"></span></a>
+<a data-role="button" id="check251" class="q88" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c251"></span></a>
+<a data-role="button" id="check252" class="q88" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c252"></span></a>
+<a data-role="button" id="check253" class="q89" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c253"></span></a>
+<a data-role="button" id="check254" class="q89" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c254"></span></a>
+<a data-role="button" id="check255" class="q89" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c255"></span></a>
+<a data-role="button" id="check256" class="q90" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c256"></span></a>
+<a data-role="button" id="check257" class="q90" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c257"></span></a>
+<a data-role="button" id="check258" class="q91" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c258"></span></a>
+<a data-role="button" id="check259" class="q91" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c259"></span></a>
+<a data-role="button" id="check260" class="q92" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c260"></span></a>
+<a data-role="button" id="check261" class="q92" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c261"></span></a>
+<a data-role="button" id="check262" class="q92" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c262"></span></a>
+<a data-role="button" id="check263" class="q93" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c263"></span></a>
+<a data-role="button" id="check264" class="q93" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c264"></span></a>
+<a data-role="button" id="check265" class="q94" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c265"></span></a>
+<a data-role="button" id="check266" class="q94" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c266"></span></a>
+<a data-role="button" id="check267" class="q95" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c267"></span></a>
+<a data-role="button" id="check268" class="q95" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c268"></span></a>
+<a data-role="button" id="check269" class="q26" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c269"></span></a>
+<a data-role="button" id="check270" class="q96" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c270"></span></a>
+<a data-role="button" id="check271" class="q97" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c271"></span></a>
+<a data-role="button" id="check272" class="q97" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c272"></span></a>
+<a data-role="button" id="check273" class="q97" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c273"></span></a>
+<a data-role="button" id="check274" class="q98" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c274"></span></a>
+<a data-role="button" id="check275" class="q98" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c275"></span></a>
+<a data-role="button" id="check276" class="q99" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c276"></span></a>
+<a data-role="button" id="check277" class="q99" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c277"></span></a>
+<a data-role="button" id="check278" class="q100" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c278"></span></a>
+<a data-role="button" id="check279" class="q100" style="display:none; font-family: 'Maiandra GD'; background-color:#329aeb; font-size:25px;"><span id="c279"></span></a>
 
 <button id="splice" style="display:none;" onClick="splice()">next</button>
 </div>
